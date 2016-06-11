@@ -10,4 +10,8 @@
 
 @interface CommentViewController : UIViewController
 
+@property NSDictionary *meetup;
+
+@property NSDictionary *comments;
+
 @end

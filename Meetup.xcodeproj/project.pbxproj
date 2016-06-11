@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		8919D1D11BCC6F2900AB3E77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919D1D01BCC6F2900AB3E77 /* main.m */; };
 		8919D1D41BCC6F2900AB3E77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919D1D31BCC6F2900AB3E77 /* AppDelegate.m */; };
-		8919D1D71BCC6F2900AB3E77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919D1D61BCC6F2900AB3E77 /* ViewController.m */; };
 		8919D1DA1BCC6F2900AB3E77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8919D1D81BCC6F2900AB3E77 /* Main.storyboard */; };
 		8919D1DC1BCC6F2900AB3E77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8919D1DB1BCC6F2900AB3E77 /* Assets.xcassets */; };
 		8919D1DF1BCC6F2900AB3E77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8919D1DD1BCC6F2900AB3E77 /* LaunchScreen.storyboard */; };
 		8919D1EA1BCC6F2900AB3E77 /* MeetupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919D1E91BCC6F2900AB3E77 /* MeetupTests.m */; };
 		8919D1F51BCC6F2900AB3E77 /* MeetupUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919D1F41BCC6F2900AB3E77 /* MeetupUITests.m */; };
+		8919D2041BCC6F5F00AB3E77 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919D2031BCC6F5F00AB3E77 /* RootViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8919D2091BCC899400AB3E77 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919D2081BCC899400AB3E77 /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8919D20C1BCCA1E100AB3E77 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919D20B1BCCA1E100AB3E77 /* WebViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8919D20F1BCCB3EC00AB3E77 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919D20E1BCCB3EC00AB3E77 /* CommentViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +42,6 @@
 		8919D1D01BCC6F2900AB3E77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8919D1D21BCC6F2900AB3E77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8919D1D31BCC6F2900AB3E77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8919D1D51BCC6F2900AB3E77 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8919D1D61BCC6F2900AB3E77 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8919D1D91BCC6F2900AB3E77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8919D1DB1BCC6F2900AB3E77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8919D1DE1BCC6F2900AB3E77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,14 @@
 		8919D1F01BCC6F2900AB3E77 /* MeetupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8919D1F41BCC6F2900AB3E77 /* MeetupUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeetupUITests.m; sourceTree = "<group>"; };
 		8919D1F61BCC6F2900AB3E77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8919D2021BCC6F5F00AB3E77 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = ../RootViewController.h; sourceTree = "<group>"; };
+		8919D2031BCC6F5F00AB3E77 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = ../RootViewController.m; sourceTree = "<group>"; };
+		8919D2071BCC899400AB3E77 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		8919D2081BCC899400AB3E77 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		8919D20A1BCCA1E100AB3E77 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		8919D20B1BCCA1E100AB3E77 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		8919D20D1BCCB3EC00AB3E77 /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
+		8919D20E1BCCB3EC00AB3E77 /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +110,12 @@
 		8919D1CE1BCC6F2900AB3E77 /* Meetup */ = {
 			isa = PBXGroup;
 			children = (
-				8919D1D21BCC6F2900AB3E77 /* AppDelegate.h */,
-				8919D1D31BCC6F2900AB3E77 /* AppDelegate.m */,
-				8919D1D51BCC6F2900AB3E77 /* ViewController.h */,
-				8919D1D61BCC6F2900AB3E77 /* ViewController.m */,
 				8919D1D81BCC6F2900AB3E77 /* Main.storyboard */,
-				8919D1DB1BCC6F2900AB3E77 /* Assets.xcassets */,
-				8919D1DD1BCC6F2900AB3E77 /* LaunchScreen.storyboard */,
+				8919D2051BCC6F6B00AB3E77 /* ViewControllers */,
+				8919D2061BCC6F9100AB3E77 /* ModelClasses */,
 				8919D1E01BCC6F2900AB3E77 /* Info.plist */,
+				8919D1DD1BCC6F2900AB3E77 /* LaunchScreen.storyboard */,
+				8919D1DB1BCC6F2900AB3E77 /* Assets.xcassets */,
 				8919D1CF1BCC6F2900AB3E77 /* Supporting Files */,
 			);
 			path = Meetup;
@@ -117,6 +124,8 @@
 		8919D1CF1BCC6F2900AB3E77 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8919D1D21BCC6F2900AB3E77 /* AppDelegate.h */,
+				8919D1D31BCC6F2900AB3E77 /* AppDelegate.m */,
 				8919D1D01BCC6F2900AB3E77 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +147,28 @@
 				8919D1F61BCC6F2900AB3E77 /* Info.plist */,
 			);
 			path = MeetupUITests;
+			sourceTree = "<group>";
+		};
+		8919D2051BCC6F6B00AB3E77 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8919D20D1BCCB3EC00AB3E77 /* CommentViewController.h */,
+				8919D20E1BCCB3EC00AB3E77 /* CommentViewController.m */,
+				8919D20A1BCCA1E100AB3E77 /* WebViewController.h */,
+				8919D20B1BCCA1E100AB3E77 /* WebViewController.m */,
+				8919D2071BCC899400AB3E77 /* DetailViewController.h */,
+				8919D2081BCC899400AB3E77 /* DetailViewController.m */,
+				8919D2021BCC6F5F00AB3E77 /* RootViewController.h */,
+				8919D2031BCC6F5F00AB3E77 /* RootViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8919D2061BCC6F9100AB3E77 /* ModelClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ModelClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8919D1D71BCC6F2900AB3E77 /* ViewController.m in Sources */,
+				8919D20F1BCCB3EC00AB3E77 /* CommentViewController.m in Sources */,
 				8919D1D41BCC6F2900AB3E77 /* AppDelegate.m in Sources */,
+				8919D20C1BCCA1E100AB3E77 /* WebViewController.m in Sources */,
 				8919D1D11BCC6F2900AB3E77 /* main.m in Sources */,
+				8919D2041BCC6F5F00AB3E77 /* RootViewController.m in Sources */,
+				8919D2091BCC899400AB3E77 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

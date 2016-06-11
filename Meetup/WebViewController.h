@@ -10,4 +10,6 @@
 
 @interface WebViewController : UIViewController
 
+@property NSString *webString;
+
 @end

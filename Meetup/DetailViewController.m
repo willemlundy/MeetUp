@@ -7,8 +7,14 @@
 //
 
 #import "DetailViewController.h"
+#import "WebViewController.h"
+#import "CommentViewController.h"
 
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *groupName;
+@property (weak, nonatomic) IBOutlet UILabel *groupCount;
+@property (weak, nonatomic) IBOutlet UILabel *hostingGroup;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
 
@@ -16,6 +22,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.groupName.text = [self.meetup objectForKey:@"name"];
+    self.groupCount.text = [NSString stringWithFormat:@"Count: %@", [self.meetup objectForKey:@"yes_rsvp_count"]];
+    self.hostingGroup.text = [NSString stringWithFormat:@"Group: %@", [[self.meetup objectForKey:@"group"] objectForKey:@"name"]]
+    ;
+    [self.webView loadHTMLString:[self.meetup objectForKey:@"description"] baseURL:nil];
+    
+    
     // Do any additional setup after loading the view.
 }
 
@@ -24,14 +38,23 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"WebViewControllerSegue"])
+    {
+        
+        WebViewController *wvc = segue.destinationViewController;
+        
+        wvc.webString = [self.meetup objectForKey:@"event_url"];
+    }
+    if ([segue.identifier isEqualToString:@"CommentViewControllerSegue"])
+    {
+        
+        CommentViewController *cvc = segue.destinationViewController;
+        
+        cvc.meetup = self.meetup;
+    }
+    
 }
-*/
 
 @end
